@@ -88,7 +88,8 @@ void print_all_tokens(char** tokens){
    char** temp = tokens;
    int word = 0;
    while(*temp != NULL){
-      printf("%s\n", *temp);
+      printf("Token[%d]: %s\n", word, *temp);
+      word++;
       temp++;
    }
 }
